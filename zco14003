@@ -1,0 +1,8 @@
+# cook your dish here
+n = int(input())
+a = []
+for i in range(n):
+    a.append(int(input()))
+a.sort()
+b = [a[j]*(n-j) for j in range(n)]
+print(max(b))
